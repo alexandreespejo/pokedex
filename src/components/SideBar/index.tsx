@@ -12,7 +12,6 @@ interface SideBarProps {
 
 export default function SideBar ( {selectedType, setSelectedType, toggle, toggleState} : SideBarProps) {
   const formatedList = TypesList.sort((a, b) => a.localeCompare(b))
-  const [ filterOptionsState, setFilterOptionsState] = useState<string[]>(formatedList);
 
   const handleClick = (key:string) => {
     if(key===selectedType) return setSelectedType('');
@@ -25,7 +24,7 @@ export default function SideBar ( {selectedType, setSelectedType, toggle, toggle
         Filtrar por tipo :
         <FilterConatiner>
           {
-            filterOptionsState.map(option=>(
+            formatedList.map(option=>(
               <FilterOption key={option} onClick={()=>handleClick(option)} isSelected={selectedType === option}>{option}</FilterOption>
             ))
           }

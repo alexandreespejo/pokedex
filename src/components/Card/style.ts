@@ -28,7 +28,7 @@ export const Container = styled.div`
   flex-direction: column;
   z-index: 5;
 
-  min-height: 15rem;
+  height: 15rem;
   padding: 10px;
 
  &:hover ${FavoriteButton} {

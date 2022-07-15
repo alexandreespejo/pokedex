@@ -12,6 +12,7 @@ interface CardProps {
 
 const AsyncImage = (props:any) => {
   const [loadedSrc, setLoadedSrc] = useState(null);
+  
   useEffect(() => {
       setLoadedSrc(null);
       if (props.src) {
