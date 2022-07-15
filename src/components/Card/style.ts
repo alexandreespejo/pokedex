@@ -29,7 +29,7 @@ export const Container = styled.div`
   z-index: 5;
 
   min-height: 15rem;
-  padding: 20px;
+  padding: 10px;
 
  &:hover ${FavoriteButton} {
   display:flex;
@@ -80,12 +80,13 @@ export const ImageContainer = styled.div`
 
   height: 50%;
   width: 80%;
+  padding: 10px;
 
   border-radius: 5px;
   background-color: ${({theme})=>theme.light_gray};
   color: ${({theme})=>theme.white};
 `
 
-export const Image = styled.img`
+export const Img = styled.img`
   height: 100%;
 `
