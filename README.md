@@ -36,4 +36,4 @@ yarn start
 ```
 
 ### Link do Projeto
-Pokedex: https://
+Pokedex: https://pokedex-syn.netlify.app
